@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv sync *)",
+      "Bash(uv run *)",
+      "Bash(uv add *)",
+      "Bash(mkdir -p /home/noman/Documents/noman/mcp_deepagent/memory)",
+      "Read(//home/noman/Documents/noman/**)",
+      "Bash(npx --yes create-next-app@latest nextjs-app --typescript --tailwind --app --no-src-dir --eslint --import-alias \"@/*\")"
+    ],
+    "additionalDirectories": [
+      "/home/noman/Documents/noman/mcp_deepagent"
+    ]
+  }
+}

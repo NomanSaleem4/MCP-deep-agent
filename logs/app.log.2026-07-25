@@ -1,0 +1,7 @@
+{"asctime": "2026-07-25 11:50:26,146", "levelname": "INFO", "name": "app.agent_factory", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-25 11:50:56,687", "levelname": "INFO", "name": "app.agent_factory", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-25 11:52:33,795", "levelname": "INFO", "name": "app.agent_factory", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-25 11:52:48,618", "levelname": "INFO", "name": "app.calculator.routes", "message": "Received query: What is my name?"}
+{"asctime": "2026-07-25 11:53:11,360", "levelname": "INFO", "name": "openai._base_client", "message": "Retrying request to /chat/completions in 12.731000 seconds"}
+{"asctime": "2026-07-25 12:29:58,663", "levelname": "INFO", "name": "app.agent_factory", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-25 12:31:34,723", "levelname": "INFO", "name": "app.agent_factory", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}

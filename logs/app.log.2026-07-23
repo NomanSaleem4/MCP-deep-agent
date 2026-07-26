@@ -1,0 +1,6 @@
+{"asctime": "2026-07-23 14:14:09,389", "levelname": "INFO", "name": "api_server", "message": "Received query: I am noman, please remember and write in your memory, also tell me what 6+6"}
+{"asctime": "2026-07-23 14:14:09,389", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-23 14:24:58,959", "levelname": "INFO", "name": "api_server", "message": "Received query: What is my name?"}
+{"asctime": "2026-07-23 14:24:58,959", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-23 15:04:19,572", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-23 15:10:36,088", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}

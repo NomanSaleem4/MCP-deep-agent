@@ -1,0 +1,9 @@
+{"asctime": "2026-07-24 00:28:55,297", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-24 00:29:15,363", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-24 00:30:37,187", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-24 00:35:55,619", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-24 01:12:05,852", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-24 01:12:13,752", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-24 01:12:24,117", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-24 01:12:46,572", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
+{"asctime": "2026-07-24 01:12:57,828", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}

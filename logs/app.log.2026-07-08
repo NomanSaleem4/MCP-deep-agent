@@ -1,0 +1,5 @@
+{"asctime": "2026-07-08 10:46:24,883", "levelname": "INFO", "name": "api_server", "message": "Received query: what is 3+5?"}
+{"asctime": "2026-07-08 10:46:39,325", "levelname": "INFO", "name": "api_server", "message": "Received query: what is 3+5?"}
+{"asctime": "2026-07-08 10:47:09,799", "levelname": "INFO", "name": "api_server", "message": "Received query: what is 3+10?"}
+{"asctime": "2026-07-08 10:47:58,689", "levelname": "INFO", "name": "api_server", "message": "Received query: what is 3+10?"}
+{"asctime": "2026-07-08 10:47:58,690", "levelname": "INFO", "name": "api_server", "message": "Loaded tools: ['get_weather', 'add', 'multiply']"}
