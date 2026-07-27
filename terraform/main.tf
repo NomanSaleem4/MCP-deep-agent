@@ -88,6 +88,14 @@ resource "azurerm_container_app" "app" {
     identity = azurerm_user_assigned_identity.identity.id
   }
 
+  # -------------------------------------------------------------
+  # 1. REGISTER ENCRYPTED SECRET IN ACA
+  # -------------------------------------------------------------
+  secret {
+    name  = "azure-ai-api-key"
+    value = var.azure_ai_api_key
+  }
+
   ingress {
     external_enabled = true
     target_port      = 8000
@@ -99,7 +107,7 @@ resource "azurerm_container_app" "app" {
   }
 
   template {
-    min_replicas = 0 # Scales down to zero when idle ($0 compute)
+    min_replicas = 0
     max_replicas = 3
 
     container {
@@ -111,6 +119,24 @@ resource "azurerm_container_app" "app" {
       env {
         name  = "ENVIRONMENT"
         value = var.environment
+      }
+
+      # ---------------------------------------------------------
+      # 2. INJECT AZURE AI ENV VARS
+      # ---------------------------------------------------------
+      env {
+        name  = "AZURE_AI_ENDPOINT"
+        value = var.azure_ai_endpoint
+      }
+
+      env {
+        name        = "AZURE_AI_API_KEY"
+        secret_name = "azure-ai-api-key"
+      }
+
+      env {
+        name  = "AZURE_AI_MODEL"
+        value = var.azure_ai_model
       }
     }
   }

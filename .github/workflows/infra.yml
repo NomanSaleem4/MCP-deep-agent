@@ -47,7 +47,15 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan -no-color
+        env:
+          TF_VAR_azure_ai_endpoint: ${{ secrets.AZURE_AI_ENDPOINT }}
+          TF_VAR_azure_ai_api_key: ${{ secrets.AZURE_AI_API_KEY }}
+          TF_VAR_azure_ai_model: ${{ secrets.AZURE_AI_MODEL }}
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve
+        env:
+          TF_VAR_azure_ai_endpoint: ${{ secrets.AZURE_AI_ENDPOINT }}
+          TF_VAR_azure_ai_api_key: ${{ secrets.AZURE_AI_API_KEY }}
+          TF_VAR_azure_ai_model: ${{ secrets.AZURE_AI_MODEL }}
