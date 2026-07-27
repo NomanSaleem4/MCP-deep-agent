@@ -44,10 +44,19 @@ jobs:
             -backend-config="storage_account_name=sttfstatef08f6b6c" \
             -backend-config="container_name=tfstate" \
             -backend-config="key=fastapi-agent.tfstate"
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: "true"
 
       - name: Terraform Plan
         run: terraform plan -no-color
         env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: "true"
           TF_VAR_azure_ai_endpoint: ${{ secrets.AZURE_AI_ENDPOINT }}
           TF_VAR_azure_ai_api_key: ${{ secrets.AZURE_AI_API_KEY }}
           TF_VAR_azure_ai_model: ${{ secrets.AZURE_AI_MODEL }}
@@ -56,6 +65,10 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve
         env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: "true"
           TF_VAR_azure_ai_endpoint: ${{ secrets.AZURE_AI_ENDPOINT }}
           TF_VAR_azure_ai_api_key: ${{ secrets.AZURE_AI_API_KEY }}
           TF_VAR_azure_ai_model: ${{ secrets.AZURE_AI_MODEL }}
